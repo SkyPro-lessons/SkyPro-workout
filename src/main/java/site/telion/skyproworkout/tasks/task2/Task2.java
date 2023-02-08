@@ -12,6 +12,8 @@ public class Task2 {
     public static final Logger logger = LoggerFactory.getLogger(Task2.class);
 
     public static void main(String[] args) {
+        logger.debug("Приложение запустилось");
+
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 4, 6, 8, 3, 0));
         logger.info("startedList = " + list);
 
@@ -20,6 +22,8 @@ public class Task2 {
 
         List<Integer> reverseListWithFor = getReverseListWithFor(list);
         logger.info("reverseListWithFor = " + reverseListWithFor);
+
+        logger.debug("Приложение завершилось");
     }
 
     public static List<Integer> getReverseListWithFor(List<Integer> list) {
