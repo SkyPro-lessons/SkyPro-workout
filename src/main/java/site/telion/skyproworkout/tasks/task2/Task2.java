@@ -22,7 +22,7 @@ public class Task2 {
         logger.info("reverseListWithFor = " + reverseListWithFor);
     }
 
-    private static List<Integer> getReverseListWithFor(List<Integer> list) {
+    public static List<Integer> getReverseListWithFor(List<Integer> list) {
         logger.debug("Выполняется метод listReverseWithFor()");
         List<Integer> result = new ArrayList<>(list);
         for (int i = 0; i < list.size() / 2; i++) {
@@ -38,7 +38,7 @@ public class Task2 {
         return list;
     }
 
-    private static List<Integer> getReverseListWithCollections(List<Integer> list) {
+    public static List<Integer> getReverseListWithCollections(List<Integer> list) {
         logger.debug("Выполняется метод listReverseWithCollections()");
         List<Integer> result = new ArrayList<>(list);
         Collections.reverse(result);
