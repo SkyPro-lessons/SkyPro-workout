@@ -14,7 +14,8 @@ public class Task3 {
         logger.debug("'a' is palindrome: " + isPalindrome("a"));
     }
 
-    private static boolean isPalindrome(String text) {
+    public static boolean isPalindrome(String text) {
+        if (text == null) return false;
         char[] textArray = text.toCharArray();
         int textSize = textArray.length;
         for (int i = 0; i < textSize/2; i++) {
