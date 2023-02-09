@@ -17,12 +17,13 @@ public class Task1 {
     }
 
     public static List<String> getFormattedNames(List<String> names) {
-        logger.info("names = " + names);
+        logger.debug("Выполняется метод getFormattedNames()");
+        logger.debug("names = " + names);
         List<String> formattedList = names.stream()
                 .map(name -> name.substring(1))
                 .sorted()
                 .collect(Collectors.toList());
-        logger.info("formattedList = " + formattedList);
+        logger.debug("formattedList = " + formattedList);
         return formattedList;
     }
 }
