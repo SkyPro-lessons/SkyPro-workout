@@ -15,7 +15,7 @@ public class Task5use {
 
     }
 
-    private static String getMyPosition(Task5 currentPosition) {
+    public static String getMyPosition(Task5 currentPosition) {
         return switch (currentPosition) {
             case ONE -> "first";
             case TWO -> "second";
