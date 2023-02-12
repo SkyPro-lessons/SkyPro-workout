@@ -11,10 +11,17 @@ public class Task6 {
     private String name;
     private int age;
 
+    public Task6(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public static void main(String[] args) {
-        String text1 = new String("text");
-        String text2 = new String("text");
-        //logger.debug("Проверка работы equals, ожидается true: " + );
+        Task6 taskFirstVariable1 = new Task6("Петя", 12);
+        Task6 taskFirstVariable2 = new Task6("Петя", 12);
+        Task6 taskFirstVariable3 = new Task6("Вася", 17);
+        logger.debug("Проверка работы equals, ожидается true: " + taskFirstVariable1.equals(taskFirstVariable2));
+        logger.debug("Проверка работы equals, ожидается false: " + taskFirstVariable1.equals(taskFirstVariable3));
     }
 
     @Override
